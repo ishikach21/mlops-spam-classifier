@@ -36,6 +36,20 @@ The model is exposed as a REST API using Flask and containerized using Docker.
 
 ---
 
+## Model Performance
+
+The spam classifier was evaluated on the SMS Spam Collection dataset.
+
+| Metric | Score |
+|---|---:|
+| Accuracy | 96.8% |
+| F1-score | 0.86 |
+
+The model uses TF-IDF vectorization with Logistic Regression for spam
+classification.
+
+---
+
 ## Run Using Docker
 
 Build Docker image:
@@ -61,7 +75,7 @@ Example JSON:
 ## Links
 
 GitHub Repository:
-https://github.com/Code7221/mlops-spam-classifier.git
+https://github.com/ishikach21/mlops-spam-classifier
 
 Docker Hub Image:
 https://hub.docker.com/repository/docker/code7221/spam-classifier/general
